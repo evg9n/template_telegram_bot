@@ -104,9 +104,9 @@ celerybeat.pid
 # Environments
 .venv
 */.env
-env/
+env/*.env
 venv/
-ENV/
+# ENV/
 env.bak/
 venv.bak/
 
@@ -132,5 +132,8 @@ dmypy.json
 
 # Database
 *.db
+
+# Logs
+logs/
 
 # Others
