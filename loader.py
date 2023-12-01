@@ -10,6 +10,7 @@ from constants import Constants
 
 
 constants = Constants()
+logger.remove()
 logger.add(
     abspath(join('logs', '{time:YYYY-MM-DD  HH.mm.ss}.log')),  # Путь к файлу логов с динамическим именем
     rotation=constants.ROTATION_LOGGER,  # Ротация логов каждый день
@@ -19,12 +20,12 @@ logger.add(
     serialize=constants.SERIALIZE_LOGGER,  # Сериализация в JSON
 )
 
-# # Вывод лога в консоль
-# logger.add(
-#     sink=print,
-#     level=constants.LEVEL_CONSOLE_LOGGER,
-#     format=constants.FORMAT_LOGGER,
-# )
+# Вывод лога в консоль
+logger.add(
+    sink=print,
+    level=constants.LEVEL_CONSOLE_LOGGER,
+    format=constants.FORMAT_LOGGER,
+)
 
 logger.debug('Загрузка токен бота')
 storage = StateMemoryStorage()

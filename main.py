@@ -11,11 +11,7 @@ from loader import logger
 
 DEFAULT_COMMANDS = (
     # ('start', "Запустить бота"),
-    # ('menu', str(back_button[0])),
-    # ('help', "Вывести справку"),
-    # ('install', str(menu_button[1])),
-    # ('current_webhook', str(menu_button[2])),
-    # ('track', str(menu_button[0])),
+    # Команды которые будут отображаться приклике на меню
 )
 
 
