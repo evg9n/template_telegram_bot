@@ -136,4 +136,5 @@ dmypy.json
 # Logs
 logs/
 
-# Others
+# Otherspoetry.lock
+poetry.lock
